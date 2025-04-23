@@ -23,6 +23,7 @@ class NotebookController extends Controller
 
     public function store(Request $request): JsonResponse
     {
+        // dd('ok');
         try {
             $request->validate([
                 'title' => 'required|string|max:255',
